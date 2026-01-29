@@ -6,7 +6,7 @@ It is designed specifically for **logistics and transportation businesses** to m
 ---
 
 ## 🔍 Project Overview
-
+Live Demo: https://simranjaiswal801-png.github.io/logistics/
 Most accounting software is generic and does not fully address the operational needs of logistics companies.  
 This project redesigns the accounting UI to align with **real-world logistics workflows**, such as:
 
