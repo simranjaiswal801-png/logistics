@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloBooks - AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>HelloBooks</h2>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="create-invoice.html">Shipments</a></li>
+                <li><a href="create-invoice.html">Invoices</a></li>
+                <li><a href="expense-management.html">Expenses</a></li>
+                <li><a href="vehicle-management.html">Vehicles</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="ai-assistant.html" class="active">AI Assistant</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h1>AI Assistant</h1>
+            <div class="ai-container">
+                <div class="chat-window" id="chat-window">
+                    <div class="message ai">Hello! How can I assist with your logistics accounting?</div>
+                </div>
+                <div class="suggestions">
+                    <h3>Suggestions</h3>
+                    <p>Cost alerts: Fuel prices are rising in Delhi.</p>
+                    <p>Profitable routes: Delhi to Mumbai shows 20% profit increase.</p>
+                    <p>Expense optimization: Switch to electric vehicles for toll savings.</p>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="chat-input" placeholder="Type a message...">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

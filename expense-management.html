@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloBooks - Expense Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>🚛 HelloBooks</h2>
+            <ul>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="create-invoice.html">📦 Shipments</a></li>
+                <li><a href="invoices.html">📄 Invoices</a></li>
+                <li><a href="expense-management.html" class="active">💰 Expenses</a></li>
+                <li><a href="vehicle-management.html">🚚 Vehicles</a></li>
+                <li><a href="reports.html">📈 Reports</a></li>
+                <li><a href="ai-assistant.html">🤖 AI Assistant</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h1>Expense Management</h1>
+            <form id="expense-form" class="form fade-in">
+                <select id="expense-type" required>
+                    <option value="">Expense Type</option>
+                    <option value="Fuel">⛽ Fuel</option>
+                    <option value="Toll">🛣️ Toll</option>
+                    <option value="Maintenance">🔧 Maintenance</option>
+                </select>
+                <input type="text" id="vehicle-number-exp" placeholder="Vehicle Number" required>
+                <input type="date" id="date" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <textarea id="notes" placeholder="Notes"></textarea>
+                <button type="submit">Add Expense</button>
+            </form>
+            <div class="table-container fade-in">
+                <h3>Expenses</h3>
+                <table id="expenses-table">
+                    <thead>
+                        <tr><th>Date</th><th>Vehicle</th><th>Expense Type</th><th>Amount</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

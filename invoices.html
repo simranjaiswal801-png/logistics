@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloBooks - Invoices</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>🚛 HelloBooks</h2>
+            <ul>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="create-invoice.html">📦 Shipments</a></li>
+                <li><a href="invoices.html" class="active">📄 Invoices</a></li>
+                <li><a href="expense-management.html">💰 Expenses</a></li>
+                <li><a href="vehicle-management.html">🚚 Vehicles</a></li>
+                <li><a href="reports.html">📈 Reports</a></li>
+                <li><a href="ai-assistant.html">🤖 AI Assistant</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h1>Invoices</h1>
+            <button onclick="window.location.href='create-invoice.html'" class="btn-primary fade-in">Create New Invoice</button>
+            <div class="table-container fade-in">
+                <h3>All Invoices</h3>
+                <table id="invoices-table">
+                    <thead>
+                        <tr><th>Invoice ID</th><th>Client</th><th>Amount</th><th>Status</th><th>Actions</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloBooks - Create Invoice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>🚛 HelloBooks</h2>
+            <ul>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="create-invoice.html" class="active">📦 Shipments</a></li>
+                <li><a href="invoices.html">📄 Invoices</a></li>
+                <li><a href="expense-management.html">💰 Expenses</a></li>
+                <li><a href="vehicle-management.html">🚚 Vehicles</a></li>
+                <li><a href="reports.html">📈 Reports</a></li>
+                <li><a href="ai-assistant.html">🤖 AI Assistant</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h1>Create Invoice</h1>
+            <form id="invoice-form" class="form fade-in">
+                <input type="text" id="client-name" placeholder="Client Name" required>
+                <input type="text" id="shipment-id" placeholder="Shipment ID" required>
+                <input type="text" id="from-location" placeholder="From Location" required>
+                <input type="text" id="to-location" placeholder="To Location" required>
+                <input type="number" id="distance" placeholder="Distance (KM)" required>
+                <input type="text" id="vehicle-number" placeholder="Vehicle Number" required>
+                <input type="number" id="weight" placeholder="Weight (kg)" required>
+                <input type="number" id="cost-per-km" placeholder="Cost per KM" required>
+                <input type="number" id="gst" placeholder="GST %" required>
+                <input type="number" id="total-amount" placeholder="Total Amount" readonly>
+                <button type="submit">Generate Invoice</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

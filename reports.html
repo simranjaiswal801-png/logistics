@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloBooks - Reports</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>🚛 HelloBooks</h2>
+            <ul>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="create-invoice.html">📦 Shipments</a></li>
+                <li><a href="invoices.html">📄 Invoices</a></li>
+                <li><a href="expense-management.html">💰 Expenses</a></li>
+                <li><a href="vehicle-management.html">🚚 Vehicles</a></li>
+                <li><a href="reports.html" class="active">📈 Reports</a></li>
+                <li><a href="ai-assistant.html">🤖 AI Assistant</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h1>Reports</h1>
+            <div class="cards-grid fade-in">
+                <div class="card report-card" onclick="alert('Vehicle-wise Profit Report generated!')"><h3>🚚 Vehicle-wise Profit Report</h3></div>
+                <div class="card report-card" onclick="alert('Route-wise Revenue Report generated!')"><h3>🛣️ Route-wise Revenue Report</h3></div>
+                <div class="card report-card" onclick="alert('Monthly Fuel Expense Report generated!')"><h3>⛽ Monthly Fuel Expense Report</h3></div>
+                <div class="card report-card" onclick="alert('Pending Invoices Report generated!')"><h3>📄 Pending Invoices Report</h3></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

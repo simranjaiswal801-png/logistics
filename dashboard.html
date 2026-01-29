@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloBooks - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>🚛 HelloBooks</h2>
+            <ul>
+                <li><a href="dashboard.html" class="active">📊 Dashboard</a></li>
+                <li><a href="create-invoice.html">📦 Shipments</a></li>
+                <li><a href="invoices.html">📄 Invoices</a></li>
+                <li><a href="expense-management.html">💰 Expenses</a></li>
+                <li><a href="vehicle-management.html">🚚 Vehicles</a></li>
+                <li><a href="reports.html">📈 Reports</a></li>
+                <li><a href="ai-assistant.html">🤖 AI Assistant</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h1>Dashboard</h1>
+            <div class="summary-cards">
+                <div class="card fade-in"><h3>📦 Total Shipments</h3><p>150</p></div>
+                <div class="card fade-in"><h3>💰 Monthly Revenue</h3><p>₹2,50,000</p></div>
+                <div class="card fade-in"><h3>⛽ Fuel Expenses</h3><p>₹50,000</p></div>
+                <div class="card fade-in"><h3>⏳ Pending Payments</h3><p>₹20,000</p></div>
+            </div>
+            <div class="charts">
+                <div class="chart-placeholder fade-in"><h3>📈 Revenue by Route</h3><p>[Chart Placeholder]</p></div>
+                <div class="chart-placeholder fade-in"><h3>📊 Expense Breakdown</h3><p>[Chart Placeholder]</p></div>
+            </div>
+            <div class="table-container fade-in">
+                <h3>Recent Shipments</h3>
+                <table id="shipments-table">
+                    <thead>
+                        <tr><th>Shipment ID</th><th>Route</th><th>Vehicle</th><th>Amount</th><th>Status</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
